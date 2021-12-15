@@ -10,9 +10,11 @@
     <version>1.0</version>
 
     <properties>
-        <maven.compiler.source>16</maven.compiler.source>
-        <maven.compiler.target>16</maven.compiler.target>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
+
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
         <selenide.version>5.24.3</selenide.version>
         <testng.version>7.4.0</testng.version>
         <owner.version>1.0.12</owner.version>
@@ -23,6 +25,8 @@
         <aspectj.version>1.9.7</aspectj.version>
         <javafaker.version>1.0.2</javafaker.version>
         <unirest-java.version>3.13.4</unirest-java.version>
+
+        <suite>testng</suite>
     </properties>
 
     <build>
@@ -45,7 +49,7 @@
                 </dependencies>
                 <configuration>
                     <suiteXmlFiles>
-<!--                        <suiteXmlFile>src/test/resources/suites/${suite}.xml</suiteXmlFile>-->
+                        <suiteXmlFile>src/test/resources/suites/${suite}.xml</suiteXmlFile>
                     </suiteXmlFiles>
                     <argLine>
                         -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
