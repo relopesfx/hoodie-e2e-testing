@@ -1,0 +1,9 @@
+.idea/
+*.iml
+
+target/
+build/
+.allure/
+video/
+
+.DS_STORE
